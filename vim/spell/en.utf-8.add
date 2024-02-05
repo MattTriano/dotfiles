@@ -2,3 +2,8 @@ config
 Autocompletion
 autocomplete
 autocompletion
+tmux
+symlink
+Symlinking
+dotfiles
+dir

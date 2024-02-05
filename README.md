@@ -20,5 +20,3 @@ Example (file): ln -s ~/dotfiles/vim/.vimrc ~.vimrc
 Example (dir):  ln -s ~/dotfiles/nvim ~/.config/nvim
 ```
 
-
-
