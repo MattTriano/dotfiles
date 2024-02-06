@@ -1,5 +1,12 @@
 # tmux (Terminal Multiplexer)
 
+## Manual setup
+
+```bash
+mkdir -p ~/dotfiles/tmux/plugins
+git clone https://github.com/tmux-plugins/tpm ~/dotfiles/tmux/plugins
+```
+
 ## Usage
 
 All commands in `tmux` are triggered by a prefix key then the command. The default `tmux` prefix key is `Ctrl+b`, but this configuration uses `Ctrl+s`.
