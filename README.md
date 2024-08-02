@@ -20,3 +20,15 @@ Example (file): ln -s ~/dotfiles/vim/.vimrc ~.vimrc
 Example (dir):  ln -s ~/dotfiles/nvim ~/.config/nvim
 ```
 
+## Alternate to symlinks
+
+If you want to keep your home dir a bit neater, you can use env vars to point the shell to the expected config files.
+
+Add these env vars to `~/.bashrc`
+
+```
+...
+export XDG_CONFIG_HOME=$HOME/dotfiles
+export VIMINIT='source $HOME/dotfiles/vim/.vimrc'
+```
+
