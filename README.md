@@ -32,3 +32,11 @@ export XDG_CONFIG_HOME=$HOME/dotfiles
 export VIMINIT='source $HOME/dotfiles/vim/.vimrc'
 ```
 
+## Setting up a venv to isolate LSP installation stuff
+
+```console
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+```
