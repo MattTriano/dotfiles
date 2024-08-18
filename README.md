@@ -35,6 +35,7 @@ export VIMINIT='source $HOME/dotfiles/vim/.vimrc'
 ## Setting up a venv to isolate LSP installation stuff
 
 ```console
+cd ~/dotfiles
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
