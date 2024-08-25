@@ -13,8 +13,6 @@ def prettify_svg(file_path):
         print(f"Error processing {file_path}: {e}", file=sys.stderr)
 
 if __name__ == "__main__":
-    xdg_config_home = os.getenv('XDG_CONFIG_HOME')
-    sys.path.insert(os.path.join(xdg_config_home, '.venv/lib/python3.11/site-packages'))
     if len(sys.argv) != 2:
         print("Usage: prettify_svg.py <svg_file>", file=sys.stderr)
     else:

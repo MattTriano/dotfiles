@@ -36,8 +36,14 @@ export VIMINIT='source $HOME/dotfiles/vim/.vimrc'
 
 ```console
 cd ~/dotfiles
-python -m venv .venv
+python -m venv temp_venv
+source temp_venv/bin/activate
+python -m pip install --upgrade pip
+pip install virtualenv
+virtualenv --always-copy .venv
+deactivate
 source .venv/bin/activate
 python -m pip install --upgrade pip
 pip install -r requirements.txt
+rm -r temp_venv
 ```
