@@ -1,5 +1,7 @@
 let g:mapleader = ","
-set runtimepath^=~/dotfiles/vim
+let g:python3_host_prog = $XDG_CONFIG_HOME . '/.venv/bin/python'
+set runtimepath^=$XDG_CONFIG_HOME/vim
+source $XDG_CONFIG_HOME/vim/pythonx.vim
 
 set history=500
 set encoding=utf8
@@ -41,5 +43,6 @@ endif
 
 call plug#begin('~/dotfiles/vim/plugins')
 Plug 'davidhalter/jedi-vim'
+Plug 'Chiel92/vim-autoformat'
 call plug#end()
 
